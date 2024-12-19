@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Menu bubble styling */
+.menu-bubble {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  width: 300px;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-bubble h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.menu-bubble a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #555555;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu-bubble a:hover {
+  background-color: #777777;
+}
+
+/* Medium bubbles for login and registration */
+.form-bubble {
+  background-color: #444444;
+  color: #ffffff;
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-bubble input[type="text"],
+.form-bubble input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #555555;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-bubble input::placeholder {
+  color: #bbbbbb;
+}
+
+.form-bubble button {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #5cb85c;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-bubble button:hover {
+  background-color: #4cae4c;
+}
